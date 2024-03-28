@@ -10,9 +10,6 @@ import pandas as pd
 
 app = Flask(__name__)
 
-
-mdl = pickle.load(open('model_svc.pkl', 'rb'))
-
 @app.route('/')
 def index():
     return render_template('index.html')
